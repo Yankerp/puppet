@@ -1,0 +1,19 @@
+ch.rpm: Header V4 RSA/SHA1 Signature, key ID 7bd9bf62: NOKEY
+Notice: /Stage[main]/Nginx::Install/Exec[runningnginx]/returns: Preparing...                          ########################################
+Notice: /Stage[main]/Nginx::Install/Exec[runningnginx]/returns: 	package nginx-release-centos-7-0.el7.ngx.noarch is already installed
+Error: rpm -ivh /root/nginxrpm/nginx-release-centos-7-0.el7.ngx.noarch.rpm returned 1 instead of one of [0]
+Error: /Stage[main]/Nginx::Install/Exec[runningnginx]/returns: change from notrun to 0 failed: rpm -ivh /root/nginxrpm/nginx-release-centos-7-0.el7.ngx.noarch.rpm returned 1 instead of one of [0]
+Notice: /Stage[main]/Nginx::Install/Package[nginx]: Dependency Exec[runningnginx] has failures: true
+Warning: /Stage[main]/Nginx::Install/Package[nginx]: Skipping because of failed dependencies
+Notice: /Stage[main]/Nginx::Config/File[/etc/nginx/nginx.conf]: Dependency Exec[runningnginx] has failures: true
+Warning: /Stage[main]/Nginx::Config/File[/etc/nginx/nginx.conf]: Skipping because of failed dependencies
+Notice: /Stage[main]/Nginx::Service/Service[nginx]: Dependency Exec[runningnginx] has failures: true
+Warning: /Stage[main]/Nginx::Service/Service[nginx]: Skipping because of failed dependencies
+Notice: /Stage[main]/Nginx::Config/File[/usr/share/nginx/html/index.php]: Dependency Exec[runningnginx] has failures: true
+Warning: /Stage[main]/Nginx::Config/File[/usr/share/nginx/html/index.php]: Skipping because of failed dependencies
+Notice: /Stage[main]/Centos::Config/Exec[sourcefile]/returns: executed successfully
+
+
+
+
+第二次运行的时候报错信息，等待处理
