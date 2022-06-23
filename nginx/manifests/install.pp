@@ -18,4 +18,8 @@ class nginx::install{
     command => 'rpm -ivh /root/nginxrpm/nginx-release-centos-7-0.el7.ngx.noarch.rpm',
     require => File['ngx_file']
   }
+
+  package{'git':
+    ensure => installed
+  }
 }
